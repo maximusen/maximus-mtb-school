@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MAXIMUS MTB ШКОЛА</title>
+    <style src="css/index.css"></style>
 </head>
 
 <body>
@@ -17,8 +18,8 @@
         </nav>
     </header>
 
-    <img src="img/bicyclists-in-forest.jpg" alt="велосипедисти в лісі">
-    <h1>MAXIMUS MTB TOURS</h1>
+    <video src="img/bicyclists-in-forest.jpg" alt="велосипедисти в лісі">
+    <h1>MAXIMUS МТБ ТУРИ</h1>
     <h3>Організація турів на велосипедах в Карпатах</h3>
     <button id="call" class="button">ЗАМОВИТИ</button>
 
@@ -66,18 +67,29 @@
     </a>
    
 
+    <section>
     <h3>МИ ЗВ'ЯЖЕМОСЬ З ВАМИ</h3>
-    <form method="POST" action="https://formspree.io/simon.ms777@gmail.com">
+    <form>
+        <div id="form-msg">
         <input type="text" id="name" placeholder="ІМ'Я">
         <br>
         <input type="tel" id="tel" placeholder="ТЕЛЕФОН">
         <br>
-        <input type="submit" value="ВІДПРАВИТИ">
+        <input type="submit" id="submit-contact-form" value="ВІДПРАВИТИ">
+        </div>
     </form>
+    </section>
 
     <footer>
         <h3>MAXIMUS MTB TOURS, 2018</h3>
     </footer>
+    
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="js/index-form.js"></script>  
+    
 </body>
 
 </html>
