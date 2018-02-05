@@ -5,13 +5,12 @@
     display: grid;
     grid-template-rows: auto auto auto auto auto auto;
     grid-template-columns: auto auto auto auto auto auto;
-    grid-auto-flow: row;
-    margin: 0 0px;
+    margin: 0px 0px;
     position: relative;
     align-items: stretch;
 }
 
-#nav {
+.nav {
     text-align: center;
     text-shadow: 1px 1px 1px black;
     background: transparent;
@@ -19,7 +18,7 @@
     font-size: 20px;
     margin: 1% 0%;
 }
-#mainbackground {
+.mainbackground {
     position: absolute;
     left: 0px;
     top: 0px;
