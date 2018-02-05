@@ -1,95 +1,129 @@
 <!DOCTYPE html>
 <html lang="uk">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>MAXIMUS MTB ШКОЛА</title>
-    <style src="css/index.css"></style>
-</head>
-
-<body>
-    <header>
-        <nav>
-            <a href="#tours">ТУРИ</a>
-            <a href="#testomonials">ВІДГУКИ</a>
-            <a href="#contacts">КОНТАКТИ</a>
-        </nav>
-    </header>
-
-    <image src="img/bicyclists-in-forest.jpg" alt="велосипедисти в лісі">
-    <h1>MAXIMUS МТБ ТУРИ</h1>
-    <h3>Організація турів на велосипедах в Карпатах</h3>
-    <button id="call" class="button">ЗАМОВИТИ</button>
-
-    <h2 id="блок-заголовок">ЧОМУ ВАМ ПОТРІБНО ВІДПРАВИТИСЬ В ТУР?</h2>
-    <img src="img/photo-icon.jpg" alt="фотоапарат іконка">
-    <h3>НОВІ ВРАЖЕННЯ</h3>
-    <p>Отримайте нові враження та відчуття, якими можна поділитись з друзями та запам'ятати їх на все життя.</p>
-    <img src="img/off-icon.jpg" alt="виключення іконка">
-    <h3>ПЕРЕЗАВАНТАЖЕННЯ</h3>
-    <p>Адреналін допоможе Вам швидко зробити перезавантаження мислення та відкрити для себе нові горизонти.</p>
-    <img src="img/heart-icon.jpg" alt="серцебиття іконка">
-    <h3>АКТИВНІСТЬ</h3>
-    <p>Велосипедні тури в горах допоможуть Вам зробити тіло витривалішим та готовим до будь-яких випробувань</p>
-
-    <img src="img/carpatian-dragobrat.jpg" id="tours" alt="драгобрат карпати">
-    <h2>СЛАВСЬКЕ - ПЕРЕВАЛ БЕСКИД - ВОДОСПАД ШИПІТ</h2>
-    <button id="call" class="button">ЗАМОВИТИ</button>
-    <img src="img/carpatian-lake.jpg" alt="карпатське озеро">
-    <h2>ВОЛОВЕЦЬ - ПОЛОНИНА БОРЖАВА - ВОДОСПАД ШИПІТ</h2>
-    <button id="call" class="button">ЗАМОВИТИ</button>
-
-    <img src="img/clients-rewiev.jpg" alt="зображення клієнтів">
-    <h2 id="testomonials">ВІДГУКИ НАШИХ КЛІЄНТІВ</h2>
-    <img src="img/client-vasyl.jpg" alt="василь багдай">
-    <p> Поїздка видалась наповнена шаленою кількістю адреналіну!Ми зарядились енергією для нових досягнень. Дякую!</p>
-    <h4>ВАСИЛЬ БАГДАЙ</h4>
-    <img src="img/review-stars.png" alt="зірки відгуку">
-    <img src="img/client-andriy.jpg" alt="андрій гриник">
-    <p> Це була дуже насичена поїздка - гори та водоспад. Інструктор підтримував в будь-якій ситуації. Організація на висоті. Рекомендую! </p>
-    <h4>Андрій Гриник</h4>
-    <img src="img/review-stars.png" alt="зірки відгуку">
-
-    <h2 id="contacts">КОНТАКТИ</h2>
-    <a href="tel:+380637806566">
-        <img src="img/phone-icon.png" alt="телефон">
-    </a>
-    <a href="mailto:simon.ms777@gmail.com">
-        <img src="img/gmail-icon.png" alt="емейл">
-    </a>
-    <a href="https://www.instagram.com/maximus_ride/">
-        <img src="img/instagram-icon.png" alt="інстаграм">
-    </a>
-    <a href="https://www.facebook.com/profile.php?id=100006927150781">
-         <img src="img/facebook-icon.png" alt="фейсбук">
-    </a>
-   
-
-    <section>
-    <h3>МИ ЗВ'ЯЖЕМОСЬ З ВАМИ</h3>
-    <form>
-        <div id="form-msg"></div>
-        <input type="text" id="name" placeholder="ІМ'Я" title="Напишіть нам, як до Вас звертатись" required>
-        <br>
-        <input type="tel" id="tel" placeholder="ТЕЛЕФОН" title="Залиште нам Ваш телефон, щоб ми розповіли Вам про наші тури" pattern="[0-9]{10}" required>
-        <br>
-        <input type="submit" id="submit-contact-form" value="ВІДПРАВИТИ">
-        
-    </form>
-    </section>
-
-    <footer>
-        <h3>MAXIMUS MTB TOURS, 2018</h3>
-    </footer>
-    
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.min.js"
-      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous"></script>
-    <script src="js/index-form.js"></script>  
-    
-</body>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>MAXIMUS MTB ШКОЛА</title>
+        <style src="css/index.css"></style>
+        <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/img/favicon/site.webmanifest">
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="transparent-menu">
+            <header>
+                <nav>
+                    <a href="#tours">ТУРИ</a>
+                    <a href="#testomonials">ВІДГУКИ</a>
+                    <a href="#contacts">КОНТАКТИ</a>
+                </nav>
+            </header>
+        </div>
+        <div class="main">
+            <section id="mainbackground">
+                <image src="img/bicyclists-in-forest.jpg" alt="велосипедисти в лісі">
+            <section id="mainblock">
+                <h1>MAXIMUS МТБ ТУРИ</h1>
+                <h3>Організація турів на велосипедах в Карпатах</h3>
+                <button id="call" class="button">ЗАМОВИТИ</button>
+            </section>
+            </section>
+        </div>
+        <div class="why">
+            <section id="whyblock">
+                <h2 id="блок-заголовок">ЧОМУ ВАМ ПОТРІБНО ВІДПРАВИТИСЬ В ТУР?</h2>
+            </section>
+            <section id="whyiconblock1">
+                <img src="img/photo-icon.jpg" alt="фотоапарат іконка">
+                <h3>НОВІ ВРАЖЕННЯ</h3>
+                <p>Отримайте нові враження та відчуття, якими можна поділитись з друзями та запам'ятати їх на все життя.</p>
+            </section>
+            <section id="whyiconblock2">
+                <img src="img/off-icon.jpg" alt="виключення іконка">
+                <h3>ПЕРЕЗАВАНТАЖЕННЯ</h3>
+                <p>Адреналін допоможе Вам швидко зробити перезавантаження мислення та відкрити для себе нові горизонти.</p>
+            </section>
+            <section id="whyiconblock3">
+                <img src="img/heart-icon.jpg" alt="серцебиття іконка">
+                <h3>АКТИВНІСТЬ</h3>
+                <p>Велосипедні тури в горах допоможуть Вам зробити тіло витривалішим та готовим до будь-яких випробувань</p>
+            </section>
+        </div>
+        <div class="chooseyourtour">
+            <section id="choosetour1">
+                <img src="img/carpatian-dragobrat.jpg" id="tours" alt="драгобрат карпати">
+                <h2>СЛАВСЬКЕ - ПЕРЕВАЛ БЕСКИД - ВОДОСПАД ШИПІТ</h2>
+                <button id="call" class="button">ЗАМОВИТИ</button>
+            </section>
+            <section id="choosetour2">
+                <img src="img/carpatian-lake.jpg" id="tour2" alt="карпатське озеро">
+                <h2>ВОЛОВЕЦЬ - ПОЛОНИНА БОРЖАВА - ВОДОСПАД ШИПІТ</h2>
+                <button id="call" class="button">ЗАМОВИТИ</button>
+            </section>
+        </div>
+        <div class="rewievs">
+            <img src="img/clients-rewiev.jpg" id="rewievbackground" alt="зображення клієнтів">
+            <section id="whyblock">
+                <h2 id="testomonials">ВІДГУКИ НАШИХ КЛІЄНТІВ</h2>
+            </section>
+            <section id="client1">
+                <img src="img/client-vasyl.jpg" alt="василь багдай">
+                <p>Поїздка видалась наповнена шаленою кількістю адреналіну!Ми зарядились енергією для нових досягнень. Дякую!</p>
+                <h4>ВАСИЛЬ БАГДАЙ</h4>
+                <img src="img/review-stars.png" alt="зірки відгуку">
+            </section>
+            <section id="client1">
+                <img src="img/client-andriy.jpg" alt="андрій гриник">
+                <p>Це була дуже насичена поїздка - гори та водоспад. Інструктор підтримував в будь-якій ситуації. Організація на висоті. Рекомендую! </p>
+                <h4>Андрій Гриник</h4>
+                <img src="img/review-stars.png" alt="зірки відгуку">
+            </section>
+        </div>
+        <div class="rewievs">
+            <h2 id="contacts">КОНТАКТИ</h2>
+            <section id="phone">
+                <a href="tel:+380637806566">
+                    <img src="img/phone-icon.png" alt="телефон">
+                </a>
+            </section>
+            <section id="contactmail">
+                <a href="mailto:simon.ms777@gmail.com">
+                    <img src="img/gmail-icon.png" alt="емейл">
+                </a>
+            </section>
+            <section id="instagram">
+                <a href="https://www.instagram.com/maximus_ride/">
+                    <img src="img/instagram-icon.png" alt="інстаграм">
+                </a>
+            </section>
+            <section id="fb">
+                <a href="https://www.facebook.com/profile.php?id=100006927150781">
+                    <img src="img/facebook-icon.png" alt="фейсбук">
+                </a>
+            </section>
+            <section id="contactform">
+                <h3>МИ ЗВ'ЯЖЕМОСЬ З ВАМИ</h3>
+                <form>
+                    <div id="form-msg"></div>
+                    <input type="text" id="name" placeholder="ІМ'Я" title="Напишіть нам, як до Вас звертатись" required>
+                    <br>
+                    <input type="tel" id="tel" placeholder="ТЕЛЕФОН" title="Залиште нам Ваш телефон, щоб ми розповіли Вам про наші тури" pattern="[0-9]{10}" required>
+                    <br>
+                    <input type="submit" id="submit-contact-form" value="ВІДПРАВИТИ">
+                </form>
+            </section>
+        </div>
+        <footer>
+            <h3>MAXIMUS MTB TOURS, 2018</h3>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="js/index-form.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
 </html>
