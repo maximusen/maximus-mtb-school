@@ -1,0 +1,136 @@
+body {
+    font-family: 'Comfortaa', cursive !important;
+    max-width: 100%;
+    min-height: 100%;
+    display: grid;
+    text-align: center;
+}
+p {
+    line-height: 1.6em;
+}
+h1, h2, h3, h4, h5, h6 {
+    line-height: 2em;
+    letter-spacing: 2px;
+}
+nav {
+    grid-area: 1 / 1 / 2 / 2;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+    background: transparent;
+    letter-spacing: 3px;
+    color: #F7F5F6;
+    font-size: 20px;
+    margin: 2% 0%;
+    z-index: 1;
+}
+a { 
+    color: white;
+}
+.main {
+    display: grid;
+    grid-template-rows: 10% 20% 20% 20% 20% 10%;
+    grid-template-columns: 100% ;
+    background-image: url("img/bicyclists-in-forest.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110vh;
+}
+#mainblock{
+    grid-area: 3 / 1 / 5 / 2;
+    color: #d6d6d6;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    letter-spacing: 2px;
+    z-index: 1;
+}
+#mtb-sub {
+    padding: 2% 0%;
+}
+.why {
+    background-color: #F7F5F6;
+    padding: 6% 0% 2% 0%;
+    
+}
+.whyblock {
+    display: grid;
+    grid-template-columns: 5% 30% 30% 30% 5%;
+    padding: 5% 0% 5% 0%;
+}
+#whyiconblock1 {
+    grid-column: 2 / 3;
+    padding: 0% 10% 0 10%;
+}
+#whyiconblock2
+{
+    grid-column: 3 / 4;
+    padding: 0% 10% 0 10%;
+}
+#whyiconblock3
+{
+   grid-column: 4 / 5;
+   padding: 0% 10% 0 10%;
+}
+#photo-icon, #off-icon, #heart-icon, #client-photo {
+    padding-bottom: 7%;
+}
+#blue-header {
+    color: #0844A4;
+    padding-bottom: 2%;
+}
+.chooseyourtour {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+}
+#choosetour1 {
+    grid-area: 1 / 1 / 2 / 2;
+    background-image: url("img/carpatian-dragobrat.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 100%;
+}
+#choosetour2 {
+    grid-area: 1 / 2 / 2 / 3;
+    background-color: #8AB6F7;
+    padding: 15% 10%;
+}
+#choosetour3 {
+    grid-area: 2 / 2 / 3 / 3;
+    background-image: url("img/carpatian-lake.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 100%;
+}
+#choosetour4 {
+    grid-area: 2 / 1 / 3 / 2;
+    background-color: #8AB6F7;
+    padding: 15% 10%;
+}
+.rewievs {
+    background-image: url("img/clients-rewiev.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.ourclients {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    margin: 5% 5%;
+    background-color: #f8f9fabf;
+    border-radius: 20px;
+}
+#testomonials {
+    grid-area: 1 / 1 / 2 / 3;
+    margin: 5% 0%;
+}
+#client1{
+    grid-area: 2 / 1 / 3 / 2;
+    margin: 0% 10% 10% 20%;
+}
+#client2{
+    grid-area: 2 / 2 / 3 / 3;
+    margin: 0% 20% 10% 10%;
+}
