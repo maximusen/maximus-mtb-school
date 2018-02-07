@@ -81,11 +81,11 @@ a {
     padding: 0% 10% 0 10%;
 }
 
-#photo-icon, #off-icon, #heart-icon, #client-photo {
+#photo-icon, #off-icon, #heart-icon, .client-photo {
     padding-bottom: 10%;
 }
 
-#client-photo {
+.client-photo {
     padding-bottom: 7%;
 }
 
