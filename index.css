@@ -11,7 +11,7 @@ p {
     font-size: 20px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5 {
     line-height: 2em;
     letter-spacing: 2px;
 }
@@ -23,7 +23,7 @@ nav {
     background: transparent;
     letter-spacing: 3px;
     color: #F7F5F6;
-    font-size: 20px;
+    font-size: 18px;
     margin: 2% 0%;
     z-index: 1;
 }
@@ -57,7 +57,7 @@ a {
 
 .why {
     background-color: #F7F5F6;
-    padding: 6% 0% 2% 0%;
+    padding: 6% 2% 2% 2%;
 }
 
 .whyblock {
@@ -91,9 +91,15 @@ a {
 
 .blue-header {
     color: #0844A4;
-    padding-bottom: 2%;
+    padding: 0% 2% 2% 2%;
 }
-
+.footer-header {
+    color: #0844A4;
+    padding: 1% 0% 1% 0%;
+}
+.footer-text {
+    padding-bottom: 1%;
+}
 .chooseyourtour {
     display: grid;
     grid-template-rows: auto auto;
@@ -153,12 +159,15 @@ a {
 
 #client1 {
     grid-area: 2 / 1 / 3 / 2;
-    margin: 0% 10% 10% 10%;
+    margin: 0% 5% 10% 5%;
 }
 
 #client2 {
     grid-area: 2 / 2 / 3 / 3;
-    margin: 0% 10% 10% 10%;
+    margin: 0% 5% 10% 5%;
+}
+.stars {
+    max-width: 80%;
 }
 
 .contact-us {
@@ -231,4 +240,240 @@ footer {
     padding-top: 1%;
     background-color: #070808f2;
     border-top: 1px solid grey;
+}
+
+@media screen and (max-width: 1367px) and (min-width: 668px) {
+p {
+    font-size: 16px;
+}
+
+h1, h2 {
+    line-height: 1.6em;
+    letter-spacing: 1px;
+}
+h3, h4, h5, h6 {
+    line-height: 1.4em;
+}
+h1 {
+    font-size: 26px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 22px;
+}
+h4 {
+    font-size: 20px;
+}
+h5 {
+    font-size: 18px;
+}
+h6 {
+    font-size: 16px;
+}
+.stars {
+    max-width: 60%;
+}
+nav {
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+#name, #tel, #submit-contact-form {
+    border: 2px solid white;
+    margin: 3% 0%;
+    border-radius: 20px;
+    padding: 2% 7% 2% 7%;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+#phoneimg, #emailimg, #instagramimg, #fbimg {
+    max-height: 70%;
+    text-align: center;
+}
+}
+
+@media screen and (max-width: 667px) {
+p {
+    font-size: 16px;
+}
+
+h1, h2 {
+    line-height: 1.6em;
+    letter-spacing: 1px;
+}
+h3, h4, h5, h6 {
+    line-height: 1.4em;
+}
+h1 {
+    font-size: 24px;
+}
+h2 {
+    font-size: 22px;
+}
+h3 {
+    font-size: 20px;
+}
+h4 {
+    font-size: 18px;
+}
+h5, h6 {
+    font-size: 16px;
+}
+.stars {
+    max-width: 35%;
+}
+nav {
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+.main {
+    display: grid;
+    grid-template-rows: 20% 10% 30% 20% 20%;
+    grid-template-columns: 100%;
+    background-image: url("img/bicyclist-in-mountains.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left; 
+    height: 100vh;
+}
+#mainblock {
+    grid-area: 3 / 1 / 4 / 2;
+    color: #d6d6d6;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    letter-spacing: 1px;
+    z-index: 1;
+}
+.whyblock {
+    display: grid;
+    grid-template-columns: 100%;
+    padding: 5% 0% 5% 0%;
+}
+
+#whyiconblock1, #whyiconblock2, #whyiconblock3 {
+    grid-column: 1 / 2;
+    padding: 5% 10% 5% 10%;
+}
+.chooseyourtour {
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25% ;
+    grid-template-columns: 100%;
+}
+
+#choosetour1 {
+    grid-area: 1 / 1 / 2 / 2;
+    background-image: url("img/carpatian-dragobrat.jpg");
+    padding: 25%;
+}
+
+#choosetour2 {
+    grid-area: 2 / 1 / 3 / 2;
+    background-color: #8AB6F7;
+    padding: 15% 10%;
+}
+
+#choosetour3 {
+    grid-area: 3 / 1 / 4 / 2;
+    background-image: url("img/carpatian-lake.jpg");
+    padding: 25%;
+}
+
+#choosetour4 {
+    grid-area: 4 / 1 / 5 / 2;
+    background-color: #8AB6F7;
+    padding: 15% 10%;
+}
+.rewievs {
+    background-image: url("img/mountains-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.ourclients {
+    display: grid;
+    grid-template-rows: 20% 40% 40%;
+    grid-template-columns: 100%;
+    margin: 5% 5%;
+    background-color: #f8f9fabf;
+    border-radius: 20px;
+}
+
+#testomonials {
+    grid-area: 1 / 1 / 2 / 2;
+    margin: 10% 5%;
+}
+
+#client1 {
+    grid-area: 2 / 1 / 3 / 2;
+    margin: 0% 10% 10% 10%;
+}
+
+#client2 {
+    grid-area: 3 / 1 / 4 / 2;
+    margin: 0% 10% 10% 10%;
+}
+.contact-us {
+    display: grid;
+    grid-template-rows: 5% 25% 25% 5% 40%;
+    grid-template-columns: 50% 50%;
+    background-color: #070808f2;
+}
+
+#contacts {
+    grid-area: 1 / 1 / 2 / 3;
+    padding: 5% 0%;
+}
+
+#phone, #contactmail, #instagram, #fb {
+    margin: 0% 0%;
+}
+
+#phone {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+#contactmail {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+#instagram {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+#fb {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+#contactform {
+    grid-area: 4 / 1 / 5 / 3;
+    padding: 10% 0% 5% 0%;
+    color: #d6d6d6;
+}
+#phoneimg, #emailimg, #instagramimg, #fbimg {
+    max-width: 50%;
+    max-height: none;
+    padding: 10% 0%;
+}
+#name, #tel, #submit-contact-form {
+    border: 1px solid white;
+    margin: 3% 0%;
+    border-radius: 20px;
+    padding: 2% 5% 2% 5%;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+}
+#submit-contact-form {
+    padding: 2% 10% 2% 10%;
+}
+#contactbody {
+    grid-area: 5 / 1 / 6 / 3;
+    margin: 0% 5%;
+}
+footer {
+    padding: 5% 0%;
+}
 }
