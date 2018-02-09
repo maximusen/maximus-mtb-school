@@ -136,6 +136,10 @@ a {
     padding: 15% 10%;
 }
 
+.btn:not(:disabled):not(.disabled) {
+    font-size: 18px;
+}
+
 .rewievs {
     background-image: url("img/clients-rewiev.jpg");
     background-repeat: no-repeat;
@@ -167,7 +171,7 @@ a {
     margin: 0% 5% 10% 5%;
 }
 .stars {
-    max-width: 80%;
+    max-width: 60%;
 }
 
 .contact-us {
@@ -273,7 +277,10 @@ h6 {
     font-size: 16px;
 }
 .stars {
-    max-width: 60%;
+    max-width: 45%;
+}
+.btn:not(:disabled):not(.disabled) {
+    font-size: 16px;
 }
 nav {
     letter-spacing: 2px;
@@ -322,7 +329,10 @@ h5, h6 {
     font-size: 16px;
 }
 .stars {
-    max-width: 35%;
+    max-width: 30%;
+}
+.btn:not(:disabled):not(.disabled) {
+    font-size: 16px;
 }
 nav {
     letter-spacing: 1px;
